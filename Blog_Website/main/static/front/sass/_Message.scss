@@ -1,0 +1,111 @@
+.card {
+  border: none;
+  margin-bottom: 10px;
+  .message-header {
+    background-color: rgb(241, 241, 241) !important;
+    border: 1px solid black;
+    color: black;
+    font-weight: bold;
+    padding: 10px 15px;
+    font-size: calc(5px + 1vw);
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    border-radius: 10px;
+
+    &:focus,
+    &:active {
+      outline: none;
+    }
+    .user {
+      margin-right: auto;
+    }
+
+    span {
+      margin: 0 5px;
+
+      a {
+        color: black;
+
+        &:hover {
+          color: red;
+        }
+      }
+      i {
+        margin: 0 3px;
+      }
+    }
+  }
+}
+
+.card-body {
+  border: 1px solid black;
+  border-top: none;
+  direction: rtl;
+}
+.reply-btn {
+  background-color: rgb(0, 119, 255);
+  padding: 5px 10px;
+  border: none;
+  color: white;
+  width: 30%;
+  text-align: center;
+  margin: 5px auto;
+  display: block;
+  border-radius: 10px;
+  &:focus,
+  &:active {
+    outline: none;
+  }
+  &:hover {
+    background-color: rgb(5, 97, 202);
+  }
+  &.change {
+    background-color: red !important;
+    &:hover {
+      background-color: rgb(156, 4, 4) !important;
+    }
+  }
+}
+.reply-text {
+  direction: rtl;
+  border: 1px solid black !important;
+  direction: rtl;
+  text-align: center;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+.reply-form {
+  width: 100%;
+  margin-top: 10px;
+  textarea {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    direction: rtl;
+    &:focus,
+    &:active {
+      outline: none;
+      box-shadow: 0 0 0px 2px #ff3b3f;
+      border: none;
+    }
+  }
+  input[type="submit"] {
+    background-color: rgb(5, 160, 5);
+    padding: 5px 10px;
+    border: none;
+    color: white;
+    width: 20%;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    border-radius: 10px;
+    &:focus,
+    &:active {
+      outline: none;
+    }
+    &:hover {
+      background-color: rgb(4, 133, 4);
+    }
+  }
+}

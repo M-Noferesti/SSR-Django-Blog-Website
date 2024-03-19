@@ -1,0 +1,96 @@
+.search-box {
+  background-color: $FirstColor !important;
+  padding: 10px;
+  border-radius: 20px;
+  width: 65%;
+
+  * {
+    outline: none;
+  }
+
+  h1 {
+    color: $SecondColor;
+    font-size: calc(15px + 1vw) !important;
+    margin-bottom: 0.7em;
+    font-weight: bolder;
+  }
+
+  .filter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0.5em;
+
+    select {
+      background-color: $SecondColor;
+      color: white;
+      direction: rtl;
+      border: none;
+      border-radius: 110px;
+      padding: 5px 15px;
+      width: 38%;
+      text-align: center;
+      font-weight: bolder;
+      margin: 10px;
+      font-size: calc(6px + 0.5vw);
+      option {
+        text-align: center;
+        border: none;
+        padding: 5px;
+        text-align: center;
+        font-weight: bolder;
+
+        &:hover option {
+          background-color: $FourthColor;
+        }
+      }
+    }
+  }
+
+  .search-input {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    border-radius: 110px;
+    background-color: white;
+    padding: 3px;
+    margin: 10px 0;
+
+    input[type="text"] {
+      width: 100%;
+      border: none;
+      direction: rtl;
+      font-size: calc(10px + 0.5vw);
+    }
+
+    input[type="submit"] {
+      border-radius: 110px;
+      color: white;
+      background-color: $SecondColor;
+      font-weight: bolder;
+      font-size: calc(10px + 0.5vw) !important;
+      padding: 5px;
+      border: none;
+      margin: 0;
+    }
+
+    i {
+      margin: 8px;
+      color: $SecondColor;
+    }
+  }
+}
+
+@media (max-width: 910px) {
+  .search-box {
+    .filter {
+      flex-direction: column;
+      width: 100%;
+      margin: 0;
+
+      select {
+        width: 60%;
+      }
+    }
+  }
+}

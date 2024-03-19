@@ -1,0 +1,103 @@
+@import "Base";
+@import "NavBar";
+@import "Footer";
+@import "Title";
+
+.contact-item {
+  .circle-icon {
+    background: $SecondColor;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 100px;
+    vertical-align: middle;
+    color: black;
+    margin-bottom: 1rem;
+  }
+
+  p,
+  h4 {
+    color: black;
+  }
+}
+
+.massage {
+  background-color: $FirstColor;
+  padding: 10px;
+  border-radius: 10px;
+  h4 {
+    margin: 15px;
+    color: $SecondColor;
+    font-weight: bolder;
+  }
+
+  p {
+    font-size: calc(11px + 0.5vw);
+    font-weight: normal;
+  }
+  .form {
+    padding: 10px;
+    input[type="submit"] {
+      background-color: $SecondColor;
+      border: none;
+      color: white;
+      width: 35%;
+      font-weight: normal;
+      font-size: 20px;
+      padding: 5px;
+      border-radius: 5px;
+      &:focus,
+      &:active {
+        outline: none;
+      }
+
+      &:hover {
+        background-color: #e6090d;
+      }
+    }
+    .inputs {
+      width: 100%;
+      display: flex;
+      margin-bottom: 15px;
+      justify-content: center;
+
+      .append {
+        background-color: $SecondColor;
+        padding: 10px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        border-bottom-right-radius: 10px;
+        border-top-right-radius: 10px;
+        border: 2px solid $FirstColor;
+        border-left: none;
+        i {
+          color: $ThirdColor;
+        }
+      }
+      input[type="text"],
+      input[type="email"],
+      textarea {
+        width: 90%;
+        height: 50px;
+        direction: rtl;
+        padding: 10px;
+        outline: none;
+        border: 2px solid $FirstColor;
+        border-right: none;
+        border-bottom-left-radius: 10px;
+        border-top-left-radius: 10px;
+
+        &:focus + .append {
+          border: 2px solid $SecondColor;
+          border-left: none;
+        }
+        &:focus {
+          border: 2px solid $SecondColor;
+          border-right: none;
+        }
+      }
+    }
+  }
+}

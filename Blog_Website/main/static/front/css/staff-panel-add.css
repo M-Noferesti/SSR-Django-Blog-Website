@@ -1,0 +1,33 @@
+.add .form-control {
+  direction: rtl;
+  font-weight: bolder;
+  color: black;
+  background-color: #bbbab6 !important;
+}
+
+.input-group-append span {
+  width: 50px;
+  background-color: #bbbab6 !important;
+  color: black !important;
+}
+
+.tox-notifications-container {
+  display: none !important;
+}
+
+::-webkit-input-placeholder {
+  color: #494949 !important;
+}
+
+:-ms-input-placeholder {
+  color: #494949 !important;
+}
+
+::-ms-input-placeholder {
+  color: #494949 !important;
+}
+
+::placeholder {
+  color: #494949 !important;
+}
+/*# sourceMappingURL=staff-panel-add.css.map */

@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AACE,IADE,CACF,aAAa,CAAC;EACZ,SAAS,EAAE,GAAG;EACd,WAAW,EAAE,MAAM;EACnB,KAAK,EAAE,KAAK;EACZ,gBAAgB,EAAE,kBAAkB;CACrC;;AAEH,AACE,mBADiB,CACjB,IAAI,CAAC;EACH,KAAK,EAAE,IAAI;EACX,gBAAgB,EAAE,kBAAkB;EACpC,KAAK,EAAE,gBAAgB;CACxB;;AAGH,AAAA,4BAA4B,CAAC;EAC3B,OAAO,EAAE,eAAe;CACzB;;AAED,AAAA,aAAa,CAAC;EACZ,KAAK,EAAE,OAAe,CAAC,UAAU;CAClC",
+    "sources": [
+        "../sass/staff-panel-add.scss"
+    ],
+    "names": [],
+    "file": "staff-panel-add.css"
+}

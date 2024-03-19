@@ -1,0 +1,124 @@
+body {
+    background-color: #272727;
+}
+
+#header {
+    background: #1b1b1b;
+    color: white;
+    padding: 2em;
+}
+
+#branding h1 {
+    color: #ff1919;
+}
+
+#content{
+margin-left: auto;
+margin-right: auto;
+}
+
+#content h1{
+    color: #ff1919;
+    font-weight: bolder;
+    font-size: calc(8px + 1vw);
+}
+div.breadcrumbs {
+    background: #ff1919;
+    color: white;
+}
+
+#header #user-tools{
+    direction: rtl;
+    margin-left: 5em;
+    width: 100%;
+}
+
+.colMS table tbody a {
+    color: black;
+}
+
+.colMS table caption {
+    background: #ff1919;
+}
+
+.module tbody {
+    background-color: #1b1b1b;
+}
+
+.module tbody tr th a {
+    color: white;
+}
+
+.module tbody tr td a {
+    color: white;
+}
+#content-related{
+    background-color: #1b1b1b !important;
+}
+#recent-actions-module{
+    background-color: #1b1b1b !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+#recent-actions-module h2 {
+    text-align: center;
+    background-color: #1b1b1b !important;
+    color: white !important;
+    font-weight: bold;
+    border-bottom: #ff1919 2px solid !important;
+    padding: 10px;
+}
+
+#recent-actions-module h3 {
+    text-align: center;
+    background-color: #1b1b1b !important;
+    color: white !important;
+    font-weight: bold;
+    border-bottom: #ff1919 2px solid;
+    padding: 10px;
+}
+
+.actionlist {
+    background-color: #1b1b1b;
+}
+
+.changelink a, .addlink a{
+color: white;
+}
+
+.changelink a:hover, .addlink a:hover{
+    color: #ff1919;
+    }
+
+
+.module table tbody tr td{
+    border-bottom: #ff1919 2px solid !important;
+    padding: 10px;
+}
+
+.module table tbody tr th{
+    border-bottom: #ff1919 2px solid !important;
+    padding: 10px;
+}
+
+.module table tbody{
+    border-bottom: #ff1919 2px solid !important;
+    padding: 10px;
+}
+
+.module table{
+    border-bottom: #ff1919 2px solid !important;
+    padding: 10px;
+}
+
+.results tbody tr th a{
+    color: black !important;
+}
+
+.results  tr td,.results  tr th{
+    background-color: rgb(189, 189, 189) !important;
+}
+
+#nav-sidebar,#toggle-nav-sidebar{
+    display: none !important;
+}

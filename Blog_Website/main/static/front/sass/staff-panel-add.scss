@@ -1,0 +1,23 @@
+.add {
+  .form-control {
+    direction: rtl;
+    font-weight: bolder;
+    color: black;
+    background-color: #bbbab6 !important;
+  }
+}
+.input-group-append {
+  span {
+    width: 50px;
+    background-color: #bbbab6 !important;
+    color: black !important;
+  }
+}
+
+.tox-notifications-container {
+  display: none !important;
+}
+
+::placeholder {
+  color: rgb(73, 73, 73) !important;
+}

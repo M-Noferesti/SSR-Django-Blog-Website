@@ -1,0 +1,46 @@
+.scrollup {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+  font-size: 30px;
+  opacity: 0;
+  background-color: $SecondColor;
+  position: fixed;
+  bottom: 30px;
+  right: 32px;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  z-index: 99999;
+  pointer-events: none;
+  cursor: pointer;
+  &:hover {
+    text-decoration: none;
+
+    i {
+      color: $FirstColor;
+    }
+  }
+
+  i {
+    color: white;
+  }
+}
+
+.scrollup.active {
+  pointer-events: auto;
+  opacity: 1;
+  transform: translateY(-55px);
+}
+
+@media (max-width: 700px) {
+  .scrollup {
+    height: 35px;
+    width: 35px;
+
+    i {
+      font-size: 20px;
+    }
+  }
+}

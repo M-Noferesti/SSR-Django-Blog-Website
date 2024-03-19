@@ -1,0 +1,76 @@
+$FirstColor: #272727;
+$SecondColor: #ff2f33;
+$BackgroundColor: #eae7dc;
+$ThirdColor: white;
+$FourthColor: black;
+$Text: #343434;
+@import "Scroll-Button";
+@font-face {
+  font-family: "IRANSans";
+  src: url("/static/front/fonts/font.eot");
+  src: url("/static/front/fonts/font.woff") format("woff"),
+    url("/static/front/fonts/font.woff2") format("woff2"),
+    url("/static/front/fonts/font.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: IRANSansNum;
+  font-style: normal;
+  font-weight: normal;
+
+  src: url("/static/front/fonts/font.eot");
+  src: url("/static/front/fonts/font-num.woff2") format("woff2"),
+    url("/static/front/fonts/font-num.woff") format("woff"),
+    url("/static/front/fonts/font-num.ttf") format("truetype");
+}
+
+* {
+  font-family: IRANSans;
+}
+
+* .number {
+  font-family: IRANSansNum;
+}
+
+body {
+  background-color: $BackgroundColor;
+  color: $ThirdColor;
+  font-weight: bolder;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+header {
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 2;
+  position: absolute;
+  width: 100%;
+  font-weight: bolder;
+  font-size: 20px;
+}
+
+button:focus {
+  outline: 0;
+}
+
+section {
+  margin-bottom: 2em;
+}
+
+.panel-header,
+.panel-alarm {
+  color: white;
+  background-color: #ff3b3f;
+  padding: 5px 10px;
+  border-radius: 10px;
+  font-size: calc(12px + 0.5vw);
+  display: block;
+  width: fit-content;
+  margin: 20px 0;
+  margin-left: auto;
+}
+
+.panel-alarm {
+  width: 100%;
+  text-align: center;
+}

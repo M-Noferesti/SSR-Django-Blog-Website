@@ -1,0 +1,48 @@
+@import "Panel";
+@import "Message";
+@import "Pagination";
+
+.dashboard-content {
+  font-size: calc(12px + 0.5vw);
+  text-align: right;
+  direction: rtl;
+  margin-bottom: 20px;
+  color: black;
+  font-weight: bolder;
+  font-size: calc(10px + 0.5vw);
+  i {
+    margin-left: 10px;
+  }
+
+  .fa-star {
+    color: #ffd700;
+  }
+
+  .fa-heart {
+    color: red;
+  }
+
+  .fa-comments {
+    color: rgb(153, 153, 153);
+  }
+
+  .fa-envelope {
+    color: rgb(72, 129, 72);
+  }
+  span {
+    display: inline-block !important;
+    text-align: right;
+    color: red;
+  }
+}
+
+.column {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}

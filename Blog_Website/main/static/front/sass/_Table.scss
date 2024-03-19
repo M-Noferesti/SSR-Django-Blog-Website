@@ -1,0 +1,124 @@
+.list {
+  overflow: auto;
+
+  table {
+    border-collapse: collapse;
+    text-align: center;
+    direction: rtl;
+    width: 100%;
+    font-size: calc(3px + 1vw);
+    font-weight: bolder;
+    color: black;
+    background-color: #bbbab6;
+    border-collapse: collapse;
+    border-radius: 20px;
+    border-style: hidden;
+
+    thead {
+      th {
+        border-radius: 10px;
+        padding: 5px;
+        border: 1px solid black;
+      }
+    }
+    tbody {
+      tr {
+        .control {
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          border: none;
+          min-height: 100%;
+
+          a {
+            color: black;
+            padding: 5px 5px;
+            border-radius: 10px;
+            font-size: calc(3px + 1vw);
+
+            &:nth-of-type(1) {
+              background-color: red;
+            }
+            &:nth-of-type(2) {
+              background-color: rgb(0, 119, 255);
+            }
+            &:nth-of-type(3) {
+              background-color: green;
+            }
+          }
+          .block {
+            background-color: rgb(235, 235, 57) !important;
+          }
+        }
+        ._400 {
+          font-size: calc(5px + 0.5vw);
+        }
+
+        ._830 {
+          font-size: calc(5px + 0.5vw);
+        }
+        td {
+          padding: 5px;
+          border: 1px solid black;
+          font-size: calc(10px + 0.5vw);
+          img {
+            max-width: 100%;
+            height: 60px;
+            border-radius: 50%;
+          }
+        }
+      }
+    }
+  }
+}
+
+.category {
+  .row {
+    .col {
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}
+
+.comment-content {
+  height: 100px;
+  width: 100%;
+  overflow-y: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.post-table {
+  th,
+  td {
+    font-size: calc(5px + 0.5vw) !important;
+
+    .control {
+      a {
+        font-size: calc(5px + 0.5vw) !important;
+      }
+    }
+  }
+}
+@media (max-width: 830px) {
+  ._830 {
+    display: none;
+  }
+}
+
+@media (max-width: 400px) {
+  ._400 {
+    display: none;
+  }
+}
+
+@media (max-width: 995px) {
+  ._995 {
+    display: none;
+  }
+}

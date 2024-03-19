@@ -1,0 +1,142 @@
+.carousel-post {
+  margin: 0;
+  padding: 0;
+  height: 350px;
+  overflow: hidden;
+
+  .carousel-post-item {
+    max-height: 100%;
+    width: 100%;
+    border: none;
+    &:hover {
+      .post-image {
+        img {
+          transition: 0.4s;
+          transform: scale(1.2);
+        }
+      }
+
+      &:after {
+        background: linear-gradient(
+          to bottom,
+          rgba(0, 0, 0, 0.267),
+          rgba(0, 0, 0, 0.3)
+        );
+      }
+    }
+
+    .post-image {
+      width: 100%;
+      height: 100%;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    &:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.6);
+    }
+
+    .post-title {
+      z-index: 2;
+      color: white;
+      position: absolute;
+      bottom: 70px;
+      right: 0;
+      margin: 0 20px;
+      font-weight: bold;
+      text-decoration: none;
+      font-size: calc(9px + 1vw);
+      display: block;
+      text-align: right;
+      direction: rtl;
+    }
+
+    .post-subcategory {
+      z-index: 2;
+      padding: 5px;
+      border-radius: 5px;
+      font-weight: bold;
+      color: white;
+      background-color: $SecondColor;
+      display: block;
+      margin-bottom: 10px;
+      text-align: center;
+      width: max-content;
+      font-size: 12px;
+    }
+
+    .details {
+      position: absolute;
+      bottom: 30px;
+      right: 20px;
+      z-index: 2;
+      text-align: justify;
+      text-align-last: right;
+      float: left;
+
+      span {
+        margin: 8px;
+        color: white;
+        font-size: calc(8px + 0.5vw);
+        i {
+          margin: 4px;
+          color: $SecondColor;
+        }
+      }
+    }
+  }
+}
+
+.owl-prev {
+  background-color: rgba(218, 35, 44, 0.8) !important;
+  height: calc(10px + 2vw);
+  width: calc(10px + 2vw);
+  position: absolute;
+  top: 45%;
+  left: 7px;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+
+  &:hover {
+    background-color: #272727 !important;
+    span {
+      color: rgb(218, 35, 44);
+    }
+  }
+}
+
+.owl-next {
+  background-color: rgba(218, 35, 44, 0.8) !important;
+  height: calc(10px + 2vw);
+  width: calc(10px + 2vw);
+  position: absolute;
+  top: 45%;
+  right: 8px;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+
+  &:hover {
+    background-color: #272727 !important;
+    span {
+      color: rgb(218, 35, 44);
+    }
+  }
+}
+
+.owl-prev span,
+.owl-next span {
+  font-size: calc(10px + 2vw);
+  font-weight: bold;
+  line-height: calc(5px + 2vw);
+  color: $FirstColor;
+}

@@ -1,0 +1,44 @@
+.add {
+  .form-control {
+    direction: rtl;
+    font-weight: bolder;
+    color: black;
+    background-color: #bbbab6 !important;
+  }
+  .row {
+    margin-bottom: 1em;
+
+    .col-md-8 {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .col-md-4 {
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}
+
+.tox-notifications-container {
+  display: none !important;
+}
+::placeholder {
+  color: rgb(73, 73, 73) !important;
+}
+
+.input-group-append {
+  span {
+    width: 50px;
+    background-color: #bbbab6 !important;
+    color: black !important;
+  }
+}
+
+.bio {
+  height: 200px !important;
+}

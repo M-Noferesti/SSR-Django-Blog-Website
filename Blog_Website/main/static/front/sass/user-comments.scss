@@ -1,0 +1,39 @@
+.comment-list {
+  background-color: white;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: solid 2px black;
+  direction: rtl;
+  p {
+    text-align: justify;
+    text-align-last: center;
+    direction: rtl;
+  }
+  a {
+    color: #ff3b3f;
+    font-weight: bolder;
+    &:hover {
+      color: #b82022;
+    }
+  }
+  .answer-to {
+    font-size: calc(8px + 0.5vw);
+    margin-bottom: 10px;
+    direction: rtl;
+    text-align: right;
+    align-self: flex-start;
+  }
+
+  .date-time {
+    font-size: calc(8px + 0.5vw);
+    margin-bottom: 10px;
+    align-self: flex-start;
+    direction: rtl;
+    text-align: right;
+  }
+}
